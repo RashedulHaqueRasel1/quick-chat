@@ -22,9 +22,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hierro A Medida",
+  title: "Quick Chat",
   description:
-    "Design amazing digital experiences that create more happy in the world.",
+    "Quick Chat is a simple file sharing app that allows you to share files with others.",
 };
 
 export default function RootLayout({
