@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Services Services",
+  title: "Quick Chat",
   description:
-    "Elite craftsmanship in custom stone, tile, and masonry for homes & businesses across the Valley.",
+    "Quick Chat is a simple file sharing app that allows you to share files with others.",
 };
 
 export default function RootLayout({
