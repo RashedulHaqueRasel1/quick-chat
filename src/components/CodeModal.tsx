@@ -159,7 +159,7 @@ export default function CodeModal({ onConnect }: { onConnect: () => void }) {
               }`}
               onClick={() => setActiveTab("get")}
             >
-              Get Code (PC)
+              Get Code
             </button>
 
             <button
@@ -170,7 +170,7 @@ export default function CodeModal({ onConnect }: { onConnect: () => void }) {
               }`}
               onClick={() => setActiveTab("input")}
             >
-              Enter Code (Mobile)
+              Enter Code
             </button>
           </div>
 
@@ -182,13 +182,15 @@ export default function CodeModal({ onConnect }: { onConnect: () => void }) {
                   <button
                     onClick={handleGetCode}
                     disabled={loading}
-                    className="w-full py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl font-medium transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2 group"
+                    className="w-full py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl font-medium transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2 group cursor-pointer"
                   >
                     {loading ? (
-                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin cursor-pointer" />
                     ) : (
                       <>
-                        <span>Generate Connection Code</span>
+                        <span className="cursor-pointer">
+                          Generate Connection Code
+                        </span>
                       </>
                     )}
                   </button>
